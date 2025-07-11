@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الأجهزة المعروضة - موبايلك</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .devices-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .device-card {
+      width: 280px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: right;
+    }
+    .device-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .device-card h3 {
+      margin: 5px 0;
+      color: #007bff;
+    }
+    .device-card p {
+      margin: 4px 0;
+      color: #333;
+    }
+    .device-card .price {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">📱 الأجهزة المتوفرة حالياً - موبايلك</header>
+
+  <main>
+    <div class="devices-container">
+      <div class="device-card">
+        <img src="https://via.placeholder.com/280x180.png?text=Samsung+A32" alt="Samsung A32">
+        <h3>Samsung Galaxy A32</h3>
+        <p class="price">650,000 ل.س</p>
+        <p>نضيف كتير، بطارية ممتازة، مافي خدوش.</p>
+        <p>📞 للتواصل: 0933445566</p>
+      </div>
+      <div class="device-card">
+        <img src="https://via.placeholder.com/280x180.png?text=iPhone+11+Pro" alt="iPhone 11 Pro">
+        <h3>iPhone 11 Pro</h3>
+        <p class="price">1,500,000 ل.س</p>
+        <p>شاشة أصلية، شاحن أصلي، استخدام شخصي.</p>
+        <p>📞 للتواصل: 0955112233</p>
+      </div>
+      <div class="device-card">
+        <img src="https://via.placeholder.com/280x180.png?text=Redmi+Note+10" alt="Redmi Note 10">
+        <h3>Xiaomi Redmi Note 10</h3>
+        <p class="price">480,000 ل.س</p>
+        <p>بحالة جيدة جداً، السعر قابل للتفاوض.</p>
+        <p>📞 للتواصل: 0944221133</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
