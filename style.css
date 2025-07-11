@@ -1,0 +1,35 @@
+
+body {
+    font-family: 'Tahoma', sans-serif;
+    background: #f4f6f8;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+.main-header {
+    background: linear-gradient(to left, #007bff, #6c757d);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+    font-size: 18px;
+}
+input, textarea {
+    padding: 8px;
+    width: 100%;
+    margin: 5px 0 10px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
