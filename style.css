@@ -3,7 +3,7 @@ body {
   font-family: 'Tahoma', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f0f4f8;
+  background: linear-gradient(to top right, #f0f4f8, #e0e7ff);
   direction: rtl;
 }
 
@@ -12,7 +12,51 @@ body {
   color: white;
   text-align: center;
   padding: 20px;
-  font-size: 24px;
+  font-size: 26px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.hero {
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+.services {
+  padding: 20px 40px;
+}
+
+.services h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  background: #ffffffcc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.services a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .games-section {
