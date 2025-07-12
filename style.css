@@ -1,44 +1,44 @@
 
 body {
-  font-family: 'Cairo', sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Tahoma', sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background: #f0f4f8;
   direction: rtl;
 }
-.container {
-  background: #fff;
-  padding: 20px 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+.main-header {
+  background-color: #3b82f6;
+  color: white;
   text-align: center;
-  max-width: 350px;
+  padding: 20px;
+  font-size: 24px;
 }
-.instructions {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+
+.games-section {
+  margin: 40px auto;
+  text-align: center;
 }
-.scratch-area {
-  position: relative;
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-canvas {
-  border: 2px dashed #aaa;
-  border-radius: 10px;
-  cursor: pointer;
+
+.game-card {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
-#prize-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #007bff;
-}
-.hidden {
-  display: none;
+
+.game-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
 }
