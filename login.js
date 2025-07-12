@@ -1,16 +1,14 @@
+// login.js
+import { initializeApp } from "firebase/app";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-
-// تكوين Firebase الخاص بك
 const firebaseConfig = {
   apiKey: "AIzaSyBHKWSQyL8O3FJ3eA3BVovpHS6LUaM06UI",
   authDomain: "mobayalak.firebaseapp.com",
   projectId: "mobayalak",
-  storageBucket: "mobayalak.firebasestorage.app",
+  storageBucket: "mobayalak.appspot.com",
   messagingSenderId: "1089189178876",
-  appId: "1:1089189178876:web:f05ad415187b6038c4d679",
-  measurementId: "G-X5C5CJ7RV9"
+  appId: "1:1089189178876:web:f05ad415187b6038c4d679"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -22,10 +20,15 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
   const password = document.getElementById("password").value;
 
   signInWithEmailAndPassword(auth, email, password)
-    .then(() => {
-      window.location.href = "admin.html";
+    .then((userCredential) => {
+      const user = userCredential.user;
+      if (user.email === "hadelyosefghabra@gmail.com") {
+        window.location.href = "admin.html";
+      } else {
+        document.getElementById("message").textContent = "هذا الحساب ليس مشرفاً.";
+      }
     })
-    .catch(() => {
-      document.getElementById("message").innerText = "فشل في تسجيل الدخول. تحقق من البيانات.";
+    .catch((error) => {
+      document.getElementById("message").textContent = "فشل تسجيل الدخول: " + error.message;
     });
 });
