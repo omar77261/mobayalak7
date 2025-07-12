@@ -4,23 +4,110 @@
 <head>
   <meta charset="UTF-8">
   <title>موبايلك - الصفحة الرئيسية</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    .overlay {
+      background: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .section:hover {
+      transform: translateY(-4px);
+    }
+    .section h2 {
+      margin-top: 0;
+      color: #007bff;
+    }
+    .section p {
+      font-size: 16px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #218838;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
-  <header class="main-header">منصة موبايلك</header>
-  <main>
-    <section class="hero">
-      <h1>أهلاً بك في موبايلك</h1>
-      <p>بيع وشراء أجهزة، خدمات صيانة، ويانصيب إلكتروني!</p>
-    </section>
+  <div class="overlay">
+    <header>📱 موبايلك - كل ما تحتاجه في عالم الجوالات</header>
 
-    <section class="services">
-      <h2>الخدمات</h2>
-      <ul>
-        <li>سحب رواتب شام كاش - <a href="https://wa.me/963991552353">راسلني واتساب</a></li>
-        <li>سحب توكنز / عملات / لايف شات - <a href="https://wa.me/963991552353">راسلني واتساب</a></li>
-      </ul>
-    </section>
-  </main>
+    <main>
+      <div class="section">
+        <h2>✨ خدماتنا</h2>
+        <p>بيع وشراء أجهزة مستعملة، صيانة محترفة بأسعار مدروسة، وضمان كامل على كل الخدمات.</p>
+      </div>
+
+      <div class="section">
+        <h2>💸 سحب الرواتب - شام كاش</h2>
+        <p>يمكنك الآن سحب راتبك بكل سهولة عبر خدمة شام كاش مباشرة من خلالنا.</p>
+        <a class="btn" href="https://wa.me/963991552353" target="_blank">راسلني عبر واتساب</a>
+      </div>
+
+      <div class="section">
+        <h2>🪙 سحب توكنز - العملات وتطبيقات الشات واللايف</h2>
+        <p>نقدّم خدمة سحب التوكنز وتحويل العملات الرقمية، بالإضافة لخدمات التطبيقات الترفيهية والشات المباشر.</p>
+        <a class="btn" href="https://wa.me/963991552353" target="_blank">راسلني عبر واتساب</a>
+      </div>
+
+      <div class="section">
+        <h2>🎟️ يانصيب موبايلك</h2>
+        <p>بطاقات بسعر 10000 ل.س، سحب أسبوعي على 500,000 ل.س، وسحب شهري على موبايل!</p>
+        <a class="btn" href="lottery.html">ادخل سحب اليانصيب</a>
+      </div>
+
+      <div class="section">
+        <h2>🛍️ سوق الأجهزة</h2>
+        <p>تصفح الأجهزة المضافة من الزوار أو أضف جهازك للبيع مجاناً.</p>
+        <a class="btn" href="market.html">زيارة السوق</a>
+      </div>
+    </main>
+
+    <footer>جميع الحقوق محفوظة © موبايلك 2025</footer>
+  </div>
 </body>
 </html>
