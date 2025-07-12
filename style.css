@@ -1,35 +1,44 @@
 
 body {
-    font-family: 'Tahoma', sans-serif;
-    background: #f4f6f8;
-    direction: rtl;
-    margin: 0;
-    padding: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  direction: rtl;
 }
-.main-header {
-    background: linear-gradient(to left, #007bff, #6c757d);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 350px;
 }
-main {
-    padding: 20px;
-    font-size: 18px;
+.instructions {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
-input, textarea {
-    padding: 8px;
-    width: 100%;
-    margin: 5px 0 10px;
+.scratch-area {
+  position: relative;
 }
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+canvas {
+  border: 2px dashed #aaa;
+  border-radius: 10px;
+  cursor: pointer;
 }
-button:hover {
-    background-color: #0056b3;
+#prize-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+.hidden {
+  display: none;
 }
