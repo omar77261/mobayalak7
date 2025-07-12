@@ -3,96 +3,103 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>موبايلك - بيع، شراء، يانصيب، صيانة</title>
-  <link rel="stylesheet" href="style.css">
+  <title>موبايلك - الصفحة الرئيسية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
   <style>
-    .hero {
-      background: linear-gradient(to left, #007bff, #6c757d);
-      color: white;
-      padding: 40px;
-      text-align: center;
-      border-radius: 0 0 20px 20px;
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #333;
     }
-    .hero h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
     .section {
-      padding: 30px;
-      margin: 20px;
       background: white;
-      border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .section:hover {
+      transform: translateY(-4px);
     }
     .section h2 {
+      margin-top: 0;
       color: #007bff;
     }
-    .button-group {
-      text-align: center;
-      margin-top: 20px;
+    .section p {
+      font-size: 16px;
     }
-    .button-group a {
-      margin: 5px;
+    .btn {
       display: inline-block;
-      background-color: #007bff;
-      color: white;
+      margin-top: 15px;
       padding: 10px 20px;
-      border-radius: 12px;
+      background-color: #28a745;
+      color: white;
       text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
-    .footer {
+    .btn:hover {
+      background-color: #218838;
+    }
+    footer {
       text-align: center;
       padding: 20px;
-      color: #666;
-      font-size: 14px;
+      background: #f1f1f1;
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <h1>مرحباً بك في <span style="color:#ffea00;">موبايلك</span> 📱</h1>
-    <p>بيع وشراء أجهزة - سحوبات يانصيب - صيانة مكفولة</p>
-  </header>
+  <header>📱 موبايلك - كل ما تحتاجه في عالم الجوالات</header>
 
   <main>
-    <section class="section">
-      <h2>📱 الأجهزة المتوفرة للبيع:</h2>
-      <p>شوف الموبايلات المتاحة حالياً بموقع موبايلك.</p>
-      <div class="button-group">
-        <a href="market.html">🛒 عرض الأجهزة الآن</a>
-      </div>
-    </section>
+    <div class="section">
+      <h2>✨ خدماتنا</h2>
+      <p>بيع وشراء أجهزة مستعملة، صيانة محترفة بأسعار مدروسة، وضمان كامل على كل الخدمات.</p>
+    </div>
 
-    <section class="section">
-      <h2>🎯 عرض خاص:</h2>
-      <p>موبايلك <strong>عنا بينباع أسرع</strong>، و<strong>بتشتري أرخص</strong>!</p>
-    </section>
+    <div class="section">
+      <h2>💸 سحب الرواتب - شام كاش</h2>
+      <p>يمكنك الآن سحب راتبك بكل سهولة عبر خدمة شام كاش مباشرة من خلالنا.</p>
+      <a class="btn" href="https://wa.me/963991552353" target="_blank">راسلني عبر واتساب</a>
+    </div>
 
-    <section class="section">
-      <h2>🎉 شارك في يانصيب موبايلك!</h2>
-      <p>كل بطاقة بـ 7000 ل.س وسحب أسبوعي على 500,000 ل.س، وسحب شهري على موبايل.</p>
-      <div class="button-group">
-        <a href="lottery.html">🔗 دخول إلى اليانصيب</a>
-      </div>
-    </section>
+    <div class="section">
+      <h2>🪙 سحب توكنز - العملات وتطبيقات الشات واللايف</h2>
+      <p>نقدّم خدمة سحب التوكنز وتحويل العملات الرقمية، بالإضافة لخدمات التطبيقات الترفيهية والشات المباشر.</p>
+      <a class="btn" href="https://wa.me/963991552353" target="_blank">راسلني عبر واتساب</a>
+    </div>
 
-    <section class="section">
-      <h2>📱 بدك تبيع جهازك؟</h2>
-      <p>ضيف جهازك من هون، وبنوافق عليه خلال دقائق.</p>
-      <div class="button-group">
-        <a href="https://wa.me/963991552353?text=أرغب%20بإضافة%20جهاز%20للبيع%20على%20موقع%20موبايلك">➕ أضف جهاز عبر واتساب</a>
-      </div>
-    </section>
+    <div class="section">
+      <h2>🎟️ يانصيب موبايلك</h2>
+      <p>بطاقات بسعر 10000 ل.س، سحب أسبوعي على 500,000 ل.س، وسحب شهري على موبايل!</p>
+      <a class="btn" href="lottery.html">ادخل سحب اليانصيب</a>
+    </div>
 
-    <section class="section">
-      <h2>🛠️ صيانة احترافية</h2>
-      <p>الصيانة عنا غير، بأسعار مدروسة، وكل شي مكفول. اسألنا عبر واتساب عن أي عطل.</p>
-      <div class="button-group">
-        <a href="https://wa.me/963991552353">📞 تواصل الآن</a>
-      </div>
-    </section>
+    <div class="section">
+      <h2>🛍️ سوق الأجهزة</h2>
+      <p>تصفح الأجهزة المضافة من الزوار أو أضف جهازك للبيع مجاناً.</p>
+      <a class="btn" href="market.html">زيارة السوق</a>
+    </div>
   </main>
 
-  <div class="footer">© 2025 موبايلك - جميع الحقوق محفوظة</div>
+  <footer>جميع الحقوق محفوظة © موبايلك 2025</footer>
 </body>
 </html>
